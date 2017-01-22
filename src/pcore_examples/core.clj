@@ -8,6 +8,8 @@
            [com.fasterxml.jackson.databind ObjectMapper]
            (java.util List HashMap)))
 
+(use 'clojure.walk)
+
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]
@@ -35,6 +37,6 @@
 
 (defn parse-json
   [path]
-  (.readValue mapper (buffered-input path) HashMap))
-
-(defn strings-to)
+  (keywordize-keys
+    (.readValue mapper
+       (buffered-input path) HashMap)))
