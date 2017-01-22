@@ -1,4 +1,8 @@
-target/
-.idea/workspace.xml
-.idea/libraries/
-.idea/markdown-*
+/target/
+/.nrepl-port
+/.idea/workspace.xml
+/.idea/markdown-*
+/.idea/vcs.xml
+/.idea/misc.xml
+/.idea/inspectionProfiles/
+/.idea/libraries/
